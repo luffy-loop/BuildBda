@@ -51,5 +51,5 @@ function scrollToTimeline(){
 }
 
 function goToCharminar(){
-    window.location.href = "html/charminar.html";
+    window.location.href = "charminar.html";
 }
