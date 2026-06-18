@@ -6,8 +6,7 @@ function checkPassword() {
     const error = document.getElementById("error");
 
     if (pass === "072507") {
-        window.location.href = "welcome.html";
-        return;
+window.location.href = "html/welcome.html";        return;
     }
 
     attempts++;
