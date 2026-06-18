@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Vault</title>
+
+    <link rel="stylesheet" href="../css/video.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ENVELOPE COVER -->
+
+    <section class="envelope-section">
+
+        <div class="envelope" id="envelope">
+
+            <div class="envelope-front">
+
+                <h1>For Shivani</h1>
+
+                <p>
+                    Some memories are worth opening.
+                </p>
+
+                <button onclick="openEnvelope()">
+                    Open Envelope ✉
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VIDEOS -->
+
+    <section class="videos-section hidden" id="videosSection">
+
+        <!-- VIDEO 1 -->
+
+        <div class="memory-card">
+
+            <video controls>
+                <source src="../videos/intertrio.mp4" type="video/mp4">
+            </video>
+
+            <h2>The Trio Era</h2>
+
+            <p>
+                Where everything started.
+            </p>
+
+            <button onclick="nextMemory(1)">
+                Next Memory →
+            </button>
+
+        </div>
+
+
+        <!-- VIDEO 2 -->
+
+        <div class="memory-card hidden-memory">
+
+            <video controls>
+                <source src="../videos/chilloutdurinaccident.mp4" type="video/mp4">
+            </video>
+
+            <h2>The Accident Day</h2>
+
+            <p>
+                Somehow even chaos became a memory.
+            </p>
+
+            <button onclick="nextMemory(2)">
+                Next Memory →
+            </button>
+
+        </div>
+
+
+        <!-- VIDEO 3 -->
+
+        <div class="memory-card hidden-memory">
+
+            <video controls>
+                <source src="../videos/meblabberingherlistening.mp4" type="video/mp4">
+            </video>
+
+            <h2>Proof You Listen To Me</h2>
+
+            <p>
+                Or at least pretend to.
+            </p>
+
+            <button onclick="nextMemory(3)">
+                Next Memory →
+            </button>
+
+        </div>
+
+
+        <!-- VIDEO 4 -->
+
+        <div class="memory-card hidden-memory">
+
+            <video controls>
+                <source src="../videos/uschatpata.mp4" type="video/mp4">
+            </video>
+
+            <h2>Chatpata Chronicles</h2>
+
+            <p>
+                One of my favourite memories.
+            </p>
+
+            <button onclick="goToLetter()">
+                One More Thing →
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="../js/video.js"></script>
+
+</body>
+</html>

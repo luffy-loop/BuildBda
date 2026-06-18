@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background-color:#fffafc;
+
+    background-image:
+
+    linear-gradient(
+        rgba(183,108,255,.04) 1px,
+        transparent 1px
+    ),
+
+    linear-gradient(
+        90deg,
+        rgba(183,108,255,.04) 1px,
+        transparent 1px
+    );
+
+    background-size:40px 40px;
+
+    min-height:100vh;
+}
+
+.doodle{
+
+    position:absolute;
+
+    font-size:2rem;
+
+    color:#d8b4fe;
+
+    opacity:.4;
+}
+
+.doodle1{
+    top:60px;
+    right:80px;
+}
+
+.doodle2{
+    bottom:120px;
+    left:60px;
+}
+
+.doodle3{
+    top:220px;
+    left:90px;
+}
+
+.letter-section{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.letter-paper{
+
+    width:100%;
+    max-width:850px;
+
+    background:white;
+
+    padding:70px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+
+    position:relative;
+}
+
+.letter-paper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:45px;
+    top:0;
+
+    width:2px;
+    height:100%;
+
+    background:#ffd6e0;
+}
+
+.letter-paper h1{
+
+    font-family:'Caveat',cursive;
+
+    font-size:4rem;
+
+    color:#9d4edd;
+
+    margin-bottom:35px;
+}
+
+.letter-content p{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:2rem;
+
+    line-height:1.8;
+
+    color:#444;
+
+    margin-bottom:22px;
+}
+
+.signature{
+
+    margin-top:50px;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:2.8rem;
+
+    color:#9d4edd;
+}
+
+.letter-paper button{
+
+    margin-top:40px;
+
+    border:none;
+
+    background:#b76cff;
+
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.letter-paper button:hover{
+
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+    .letter-paper{
+
+        padding:40px 25px;
+    }
+
+    .letter-paper h1{
+
+        font-size:3rem;
+    }
+
+    .letter-content p{
+
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .signature{
+
+        font-size:1.8rem;
+    }
+
+}

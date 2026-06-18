@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background-color:#fff9fb;
+
+    background-image:
+
+    linear-gradient(
+        45deg,
+        rgba(183,108,255,.05) 25%,
+        transparent 25%
+    ),
+
+    linear-gradient(
+        -45deg,
+        rgba(183,108,255,.05) 25%,
+        transparent 25%
+    ),
+
+    linear-gradient(
+        45deg,
+        transparent 75%,
+        rgba(183,108,255,.05) 75%
+    ),
+
+    linear-gradient(
+        -45deg,
+        transparent 75%,
+        rgba(183,108,255,.05) 75%
+    );
+
+    background-size:40px 40px;
+
+    background-position:
+    0 0,
+    0 20px,
+    20px -20px,
+    -20px 0px;
+
+    min-height:100vh;
+}
+.polaroid::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+    height:18px;
+
+    background:
+    rgba(255,255,255,.6);
+
+    top:-8px;
+    left:50%;
+
+    transform:
+    translateX(-50%)
+    rotate(-4deg);
+}
+
+.hidden{
+    display:none;
+}
+
+/* ENVELOPE */
+
+.envelope-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.envelope{
+    width:500px;
+    height:320px;
+    background:#f8e8d0;
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.envelope-front h1{
+    font-family:'Caveat',cursive;
+    font-size:4rem;
+    color:#9d4edd;
+}
+
+.envelope-front p{
+    margin:20px 0;
+    color:#555;
+}
+
+.envelope-front button{
+    border:none;
+    background:#b76cff;
+    color:white;
+    padding:15px 35px;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+}
+
+/* VIDEOS */
+
+.videos-section{
+    padding:100px 20px;
+}
+
+.memory-card{
+    max-width:1000px;
+    margin:80px auto;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.memory-card video{
+    width:auto;
+    max-width:100%;
+    max-height:85vh;
+    display:block;
+    margin:auto;
+    object-fit:contain;
+}
+
+.memory-card video{
+    width:100%;
+    display:block;
+    max-height:700px;
+    object-fit:cover;
+}
+
+.memory-card h2{
+    margin-top:25px;
+    text-align:center;
+    color:#9d4edd;
+    font-size:2.8rem;
+}
+
+.memory-card p{
+    text-align:center;
+    color:#555;
+    margin:15px 0 25px;
+    font-size:1.1rem;
+}
+
+.memory-card button{
+    display:block;
+    margin:0 auto 35px;
+    border:none;
+    background:#b76cff;
+    color:white;
+    padding:15px 40px;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.hidden-memory{
+    display:none;
+}
+
+@media(max-width:768px){
+
+    .envelope{
+        width:90%;
+        height:auto;
+        padding:40px 20px;
+    }
+
+    .envelope-front h1{
+        font-size:3rem;
+    }
+
+    .memory-card{
+        margin:50px auto;
+    }
+
+    .memory-card video{
+        max-height:450px;
+    }
+}

@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(255,245,248,.92),
+        rgba(255,253,247,.92)
+    );
+
+    overflow-x:hidden;
+}
+
+.final-section{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.final-photo{
+
+    width:300px;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+    margin-bottom:40px;
+}
+
+.final-section h1{
+
+    font-family:'Caveat',cursive;
+
+    font-size:5rem;
+
+    color:#9d4edd;
+
+    margin-bottom:25px;
+}
+
+.message{
+
+    max-width:700px;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    color:#555;
+
+    margin-bottom:60px;
+}
+
+#countdown{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-bottom:60px;
+}
+
+.time-box{
+
+    width:130px;
+
+    background:white;
+
+    padding:25px 15px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:#9d4edd;
+}
+
+.time-box small{
+
+    color:#666;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+.ending{
+
+    font-family:'Caveat',cursive;
+
+    font-size:2.5rem;
+
+    color:#9d4edd;
+}
+
+/* floating polaroids */
+
+.final-section::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:40px;
+    left:40px;
+
+    width:120px;
+    height:120px;
+
+    background:url("../images/bothselfie.jpg");
+
+    background-size:cover;
+
+    border:10px solid white;
+
+    transform:rotate(-12deg);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+.final-section::after{
+
+    content:"";
+
+    position:fixed;
+
+    right:40px;
+    bottom:40px;
+
+    width:120px;
+    height:120px;
+
+    background:url("../images/triocollage.jpg");
+
+    background-size:cover;
+
+    border:10px solid white;
+
+    transform:rotate(10deg);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+@media(max-width:768px){
+
+    .final-photo{
+        width:220px;
+        height:220px;
+    }
+
+    .final-section h1{
+        font-size:3.5rem;
+    }
+
+    .time-box{
+        width:100px;
+    }
+
+    .time-box span{
+        font-size:2rem;
+    }
+
+    .final-section::before,
+    .final-section::after{
+        display:none;
+    }
+}
+
+.polaroid-wall{
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin:60px 0;
+}
+
+.polaroid{
+
+    width:180px;
+
+    background:white;
+
+    padding:12px 12px 35px;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.polaroid:hover{
+
+    transform:scale(1.05);
+}
+
+.polaroid img{
+
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+}
+
+.p1{
+    transform:rotate(-12deg);
+    margin-top:-120px;
+}
+
+.p2{
+    transform:rotate(8deg);
+    margin-top:40px;
+}
+
+.p3{
+    transform:rotate(-9deg);
+    margin-top:80px;
+}
+
+.p4{
+    transform:rotate(11deg);
+    margin-top:30px;
+}
+
+.p5{
+    transform:rotate(-6deg);
+    margin-top:60px;
+}
+
+.p6{
+    transform:rotate(14deg);
+    margin-top:-40px;
+}
+
+.polaroid{
+    width:160px;
+}
+
+.polaroid span{
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    font-family:'Caveat',cursive;
+    font-size:1.5rem;
+    color:#666;
+}
+
+.memory-trail{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    font-size:2rem;
+
+    color:#e9d5ff;
+}
